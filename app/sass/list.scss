@@ -1,0 +1,58 @@
+.list{
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 0;
+    .nctouch-home-block {
+        width: 100%;
+        .tit-bar {
+            border-left: solid 3.3px #ED5564;
+            height: 17.6px;
+            margin: 11px 0 1.1px 6.6px;
+            padding-left: 6.6px;
+            font-size: 15.4px;
+            line-height: 17.6px;
+        }
+        .goods-list{
+            padding: 0;
+            margin-bottom: 11px;
+            li{
+                list-style: none;
+                background-color: #FFF;
+                vertical-align: top;
+                display: inline-block;
+                width: 47%;
+                overflow: hidden;
+                border-radius: 4.4px;
+                .goods-pic {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                dl{
+                    padding: 4.4px;
+                    .goods-name {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #000;
+                        height: 44px;
+                        overflow: hidden;
+                    }
+                    .goods-price {
+                        display: block;
+                        font-size: 11px;
+                        line-height: 22px;
+                        height: 22px;
+                        margin-top: 8.8px;
+                        padding-top: 8.8px;
+                        color: #DB4453;
+                        border-top: solid 1px #EEE;
+                    }
+                }
+            }
+        }
+    }
+}
