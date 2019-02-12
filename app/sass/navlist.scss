@@ -1,0 +1,32 @@
+.nctouch-home-nav2 {
+    background-color: #FFF;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+    border-bottom: solid 1px #EEE;
+    height: 199px;
+    li{
+        list-style: none;
+        float: left;
+        width: 20%;
+        height: 81.4px;
+        padding: 11px 0 6.6px 0;
+        span{
+            display: inline-block;
+            width: 39.6px;
+            height: 39.6px;
+            margin: 0 0 6.6px 13px;
+            border-radius: 100%;
+            background-color: #FB6E52;
+            i{color:white;text-align: center;line-height: 39.6px;margin-left: 11px}
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+.fixed-Width {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+}

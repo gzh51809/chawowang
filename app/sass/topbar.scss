@@ -1,0 +1,105 @@
+#header.transparent{
+    position: absolute!important;
+    top: auto!important;
+    .header-inp {
+        margin: 6.05px 55px 0 55px;
+        background-color: rgba(255,255,255,0.9);
+        border: none;
+        border-radius: 2.2px;
+    }
+    .logo{
+        img{
+            height: 18.7px;
+            position: absolute;
+            margin-top: 12px;
+            padding-left: 10px;
+            width: 47.38px !important;
+            vertical-align: top;
+            border: none;
+        }
+    }
+}
+#header{
+    z-index: 2 !important;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    .header-r {
+        width: 29.69px;
+        height: 32px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        font-size: 0;
+        text-align: right;
+        a{
+            width: 29.69px;
+            height: 31.88px;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            vertical-align: top;
+            padding: 8.8px 8.8px 2.2px 0;
+            i{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            i.more{
+                background-image: url(../images/more_w.png);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                opacity: 1;
+            }
+        }
+    }
+    .header-inp { 
+        position: relative;
+        display: block;
+        height: 30.8px;
+        text-align: left;
+        .search-input {
+            float: left;
+            width: 165px;
+            height: 22px;
+            padding: 4.4px 0;
+            font-size: 15px;
+            line-height: 22px;
+            color: #BBB;
+            vertical-align: top;
+            border: none 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .icon {
+            float: left;
+            vertical-align: top;
+            width: 22px;
+            height: 22px;
+            margin: 4.4px 2.2px;
+            background-image: url(../images/search_ico.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 70%;
+            opacity: 0.3;
+        }
+    }
+}
+.transparent{
+    background-color: transparent;
+    border-bottom: none;
+}
+header{
+    background: #F8F8F8;
+    height: 42.9px;
+}
+.header-wrap {
+    display: block;
+    max-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
