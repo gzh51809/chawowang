@@ -1,0 +1,61 @@
+.kefutop{
+    header{
+        background: #F8F8F8;
+        height: 42.9px;
+        position: absolute;
+        z-index: 8;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        border-bottom: solid 0.05rem #EEE;
+        .header-wrap {
+            display: block;
+            max-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+            .header-title {
+                display: inline-block;
+                margin: 0 auto;
+                h1 {
+                    font-size: 16px;
+                    line-height: 42.9px;
+                    height: 42.9px;
+                    margin: 0px;
+                    img{
+                        height: 18.7px;
+                        // margin-top: 12px;
+                    }
+                }
+            }
+            .header-l {
+                display: block;
+                width: 42.9px;
+                height: 42.9px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                a {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    padding: 10px;
+                    i.back {
+                        display: block;
+                        width: 17.594px;
+                        height: 17.594px;
+                        margin: 2.18px;
+                        background-image: url(http://www.chawo.com/wap/images/arrow_left_b.png);
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+    }
+}

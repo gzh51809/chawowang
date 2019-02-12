@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
-
+import Kefutop from './page/kefu/kefutop.js'
 class Kefu extends Component{
 
     render(){
         // let {match,history} = this.props;
 
-        return <div>客服</div>
+        return <div>
+            <Kefutop/>
+        </div>
     }
 }
 

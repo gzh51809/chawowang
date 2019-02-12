@@ -35,20 +35,36 @@ class List extends Component{
         // style={{height:"199px"}}
         return (
             <div className="list">
-                <div className="nctouch-home-block item-goods">
-                    <div className="tit-bar">普洱生茶</div>
-                    <ul className="goods-list">
-                    <li>
-                        <a href="tmpl/product_detail.html?goods_id=105051">
-                            <div className="goods-pic"><img src="//www.chawo.com/data/upload/shop/store/goods/2/2018/03/2_05736643032789623_360.jpg" alt=""/></div>
-                            <dl className="goods-info">
-                                <dt className="goods-name">2018年下关 便装特沱 生茶 100克/沱 1沱</dt>
-                                <dd className="goods-price">￥<em data-gid="105051">17.60</em></dd>
-                            </dl>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
+                {
+                    this.state.list.map((item,index)=>{
+                        return (
+                            <div className="nctouch-home-block item-goods" key={index}>
+                                <div className="tit-bar">{item.goods.title}</div>
+                                <ul className="goods-list" key={index}>
+                                {
+                                    item.goods.item.map((list,index)=>{
+                                        return (
+                                            
+                                                <li key={index}>
+                                                    <a href="tmpl/product_detail.html?goods_id=105051">
+                                                        <div className="goods-pic"><img src={list.goods_image} alt=""/></div>
+                                                        <dl className="goods-info">
+                                                            <dt className="goods-name">{list.goods_name}</dt>
+                                                            <dd className="goods-price">￥<em data-gid="105051">{list.goods_promotion_price}</em></dd>
+                                                        </dl>
+                                                    </a>
+                                                </li>
+                                            
+                                        )
+                                    })
+                                    
+                                }
+                                </ul>
+                                
+                            </div>
+                        )
+                    })
+                }
             </div>
         )
     }
