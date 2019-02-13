@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route,Link,NavLink,Switch,Redirect,withRouter} from 'react-router-dom';
-
+import Detail from './components/page/detail/detail.js'
 import PropTypes from 'prop-types';
 
 import Home from './components/Home';
@@ -68,7 +68,8 @@ class App extends React.Component{
                     icon:'user'
                 }
             ],
-            current:'/home'
+            current:'/home',
+            show:'block'
 
         }
 
@@ -81,7 +82,7 @@ class App extends React.Component{
             current:key
         });
 
-        // console.log(this.props.history);
+        console.log(this.props.history,key);
 
         // 
         this.props.history.push(key)
@@ -93,10 +94,15 @@ class App extends React.Component{
         let hash = window.location.hash;// 可能得到的值：/home,/list,/list/computer
         hash = hash.split('/')[1];
 
+        if(hash=="detail"){
+            this.setState({
+                show:'none'
+            })
+        }
+
         this.setState({
             current:'/'+hash
         })
-
     }
     render(){
         return (
@@ -114,6 +120,7 @@ class App extends React.Component{
                 mode="horizontal"
                 selectedKeys={[this.state.current]}
                 onClick={this.handleChange}
+                style={{display:this.state.show}}
                 >
                     {
                         this.state.menu.map(menu=>{
@@ -131,6 +138,7 @@ class App extends React.Component{
                     <Route path="/kefu" component={Kefu}/>
                     <Route path="/car" component={Car}/>
                     <Route path="/mine" component={Mine}/>
+                    <Route path="/detail" component={Detail}/>
                     <Redirect from="/" to="/home"/>
                     {/* <Route path="/" component={Home} exact/> */}
                 </Switch>
