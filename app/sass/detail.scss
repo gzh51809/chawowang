@@ -1,0 +1,337 @@
+.detail{
+        .goods-detail-cnt{
+
+            .goods-detail-comment {
+                background-color: #FFF;
+                padding: 0 10px;
+                margin-top: 10px;
+                border-top: solid #EEE 1px;
+                border-bottom: solid #EEE 1px;
+                .title{ 
+                    a {
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+                    height: 20px;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #888;
+                    }
+                    span {
+                        font-size: 14px;
+                        margin-left: 22px;
+                        color: #ED5564;
+                    }
+                    
+                }
+            }
+            .goods-detail-item {
+                position: relative;
+                z-index: 1;
+                padding: 12px;
+                background: #FFF;
+                border-bottom: solid 1px #EEE;
+                .item-more {
+                    position: absolute;
+                    z-index: -1;
+                    top: 10px;
+                    right: 10px;
+                    display: block;
+                    width: 18px;
+                    height:18px;
+                    background-image: url(../images/arrow_right_b.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: 80%;
+                    opacity: 0.4;
+                }
+                .item-con {
+                    display: block;
+                    margin-left: 26px;
+                    
+                    dl {
+                        margin: 0;
+                        display: block;
+                        line-height: 20px;
+                        dt {
+                            font-size: 14px;
+                            color: #333;
+                            span {
+                                display: inline-block;
+                                height: 20px;
+                                margin: 0 6px 6px 0;
+                                border: solid 1px #CCC;
+                                font-size: 12px;
+                                line-height: 20px;
+                                padding: 0 4px;
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+                .itme-name {
+                    position: absolute;
+                    z-index: 1;
+                    top: 10px;
+                    left: 10px;
+                    display: block;
+                    width: 24px;
+                    height: 20px;
+                    font-size: 12px;
+                    color: #888;
+                    line-height: 20px;
+                }
+            }
+            .goods-detail-voucher{
+                padding: 11px;
+                background: #999;
+                a {
+                    font-size: 14px;
+                    color: #555;
+                    line-height: 22px;
+                    display: block;
+                    i {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 12px;
+                        height: 12px;
+                        line-height: 8px;
+                        text-align: center;
+                        padding: 2px;
+                        margin: 4px 4px 0 0;
+                        font-size: 10px;
+                        background-color: #ED5564;
+                        color: #FFF;
+                        border-radius: 2px;
+                    }
+                }
+            }
+            .goods-detail-price {
+                position: relative;
+                z-index: 1;
+                display: block;
+                padding: 0 10px;
+                background-color: #FFF;
+                margin: 0;
+                dt{
+                    background-color: orange;
+                    color: #FFF;
+                    padding: 0 5px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 22px;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+            .gdi-contact {
+                padding-top: 0;
+                text-indent: 3px;
+            }
+            .goods-detail-item {
+                position: relative;
+                z-index: 1;
+                padding: 10px;
+                background: #FFF;
+                border-bottom: solid 1 #EEE;
+                a.btn.contact {
+                    background: #ED5564;
+                    border-color: #9d3434;
+                    color: #fff !important;
+                    text-decoration: none;
+                }
+                .btn {
+                    vertical-align: top;
+                    display: inline-block !important;
+                    height: 22px;
+                    padding: 0 6;
+                    margin: 0 auto;
+                    font-size: 12px;
+                    color: #555 !important;
+                    line-height: 22px;
+                    text-align: center;
+                    background-color: #FFF;
+                    border: solid 1px #CCC;
+                    border-radius: 3px;
+                }
+            }
+            .goods-detail-price {
+                position: relative;
+                z-index: 1;
+                display: block;
+                padding: 0 10px;
+                background-color: #FFF;
+                .sold {
+                    position: relative;
+                    left: 122px;
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+                dl {
+                    display: inline-block;
+                    margin: 0;
+                    dd {
+                        display: inline-block;
+                        font-size: 12px;
+                        text-decoration: line-through;
+                        color: #999;
+                        line-height: 20px;
+                    }
+                    dt {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #DB4453;
+                        line-height: 22px;
+                        em {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            .goods-detail-name {
+                display: block;
+                padding: 10px 10px 5px 10px;
+                background-color: #FFF;
+                border-top: solid 1px #EEE;
+                dl{
+                    margin: 0;
+                    dt {
+                        display: block;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+                
+            }
+        }
+        .ant-carousel{
+            background-color: #FFF;
+            display: block;
+            margin-top: 44px;  
+            .slick-slider{
+                position: relative;
+                overflow: hidden;
+                height: 352px;
+                width: 352px;
+                margin: 0 auto;
+                img{
+                    height: 352px;
+                }
+            } 
+        }
+    .post{
+        position: fixed;
+    }
+    #header {
+        background: #F8F8F8;
+        height: 44px;
+        position: absolute;
+        z-index: 8;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        border-bottom: solid 1px #EEE;
+        .header-wrap {
+            display: block;
+            max-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+            .header-r {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                font-size: 0;
+                text-align: right;
+                a {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 40px;
+                    height: 40px;
+                    padding: 11px 11px;
+                    i {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    i.more {
+                        background-image: url(../images/more_w.png);
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: 100%;
+                        opacity: 0.65;
+                    }
+                }
+            }
+            .header-nav {
+                display: inline-block;
+                margin: 0 auto;
+                vertical-align: top;
+                font-size: 0;
+                white-space: nowrap;
+                padding: 0;
+                li.logo img {
+                    height: 18px;
+                    margin-top: 15px;
+                }
+                li.cur a {
+                    padding: 2px 2px 0 1px;
+                    color: #ED5564;
+                    border-bottom: solid 2px #ED5564;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    height: 42px;
+                    a{
+                        display: inline-block;
+                        padding: 2px 5px;
+                        margin: 0 11px;
+                        font-size: 15px;
+                        line-height: 40px;
+                        color: #333;
+                    }
+                }
+            }
+            .header-l {
+                display: block;
+                width: 44px;
+                height: 44px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                a {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    width: 42px;
+                    height: 42px;
+                    padding: 10px;
+                    i.back {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        margin: 2px;
+                        background-image: url(../images/arrow_left_b.png);
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+    }
+
+}

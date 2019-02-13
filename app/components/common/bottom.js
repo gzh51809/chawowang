@@ -9,7 +9,6 @@ import Classify from './components/Classify';
 import Kefu from './components/Kefu';
 // import List from './components/List';
 import Mine from './components/Mine';
-import axios from 'axios';
 // import Goods from './components/Goods';
 
 // 引入ant-design（全部引入）
@@ -36,7 +35,7 @@ import './sass/top.scss'
             * 
 */
 
-class App extends React.Component{
+class Bottom extends React.Component{
     constructor(){
         super();
         this.state = {
@@ -95,11 +94,11 @@ class App extends React.Component{
         hash = hash.split('/')[1];
         console.log(hash)
 
-        if(hash=="detail"){
-            this.setState({
-                show:'none'
-            })
-        }
+        // if(hash=="detail"){
+        //     this.setState({
+        //         show:'none'
+        //     })
+        // }
 
         this.setState({
             current:'/'+hash
@@ -149,16 +148,16 @@ class App extends React.Component{
 }
 
 
-App.contextTypes = {
+Bottom.contextTypes = {
     router:PropTypes.object
 }
 
 // 利用withRouter高阶组件包装App组件
-App = withRouter(App);
+Bottom = withRouter(Bottom);
 
 
 
-export default App;
+export default Bottom;
 
 // 高阶组件的理解
 // WidthRouter = (App)=>{

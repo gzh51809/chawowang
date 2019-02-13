@@ -85,6 +85,6 @@ class List extends Component{
 //     router:PropTypes.object
 // }
 
-// 利用withRouter高阶组件包装App组件
-// List = withRouter(List);
+// 利用withRouter高阶组件包装组件
+List = withRouter(List);
 export default List;
