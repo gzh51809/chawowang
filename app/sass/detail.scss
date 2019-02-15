@@ -1,5 +1,44 @@
 .detail{
         .goods-detail-cnt{
+            .goods-detail-foot {
+                height: 44px;
+                background: rgba(245,245,245,0.95);
+                position: fixed;
+                z-index: 1;
+                // top: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                .otreh-handle {
+                    width: 47.5%;
+                    float: left;
+                    font-size: 0;
+                    a.home i {
+                        background-image: url(../images/home_b.png);
+                    }
+                    a{
+                        width: 25%;
+                        position: relative;
+                        z-index: auto;
+                        display: inline-block;
+                        height: 42px;
+                        text-align: center;
+                        color: #333;
+                        border-top: solid 1px #DDD;
+                        i{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            margin: 4px auto 1px auto;
+                            background-repeat: no-repeat;
+                            background-position: 50% 50%;
+                            background-size: 80%;
+                            opacity: 0.65;
+                        }
+                    }
+                }
+
+            }
 
             .goods-detail-comment {
                 background-color: #FFF;
@@ -7,16 +46,51 @@
                 margin-top: 10px;
                 border-top: solid #EEE 1px;
                 border-bottom: solid #EEE 1px;
+                dl {
+                    display: block;
+                    padding-bottom: 9px;
+                    margin: 0;
+                    border-top: solid 1px #EEE;
+                        dt {
+                            display: block;
+                            height: 32px;
+                            padding: 8px 0 4px 0;
+                            line-height: 20px;
+                            overflow: hidden;
+                    }
+                }
                 .title{ 
+                    .rate-num {
+                        position: absolute;
+                        z-index: 1;
+                        top: 10px;
+                        right: 22px;
+                        color: #888;
+                        font-size: 12px;
+                    }
                     a {
                     display: block;
                     position: relative;
                     z-index: 1;
-                    height: 20px;
+                    height: 42px;
                     padding: 10px 0;
                     font-size: 14px;
                     line-height: 20px;
                     color: #888;
+                    .item-more {
+                        position: absolute;
+                        z-index: -1;
+                        top: 10px;
+                        right: 10px;
+                        display: block;
+                        width: 18px;
+                        height: 20px;
+                        background-image: url(../images/arrow_right_b.png);
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: 80%;
+                        opacity: 0.4;
+                    }
                     }
                     span {
                         font-size: 14px;
@@ -335,3 +409,55 @@
     }
 
 }
+.ant-drawer{
+    .ant-drawer-content-wrapper{
+        .nctouch-bottom-mask-top {
+            position: relative;
+            z-index: 1;
+            display: block;
+            padding: 12px;
+            border-bottom: solid 1px #EEE;
+        }
+        .goods-options-info {
+            min-height: 66px;
+            .goods-pic {
+                position: absolute;
+                z-index: 1;
+                top: 12px;
+                left: 12px;
+                width: 66px;
+                height: 66px;
+                background: #FFF;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .nctouch-bottom-mask-tip{
+            position: absolute;
+            z-index: 1;
+            top: -26px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #FFF;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            i {
+                background-image: url(../images/back_down.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 75%;
+                width: 18px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 2px;
+            }
+        }
+    }
+}
+

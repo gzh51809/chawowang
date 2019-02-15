@@ -139,7 +139,7 @@ class App extends React.Component{
                     <Route path="/kefu" component={Kefu}/>
                     <Route path="/car" component={Car}/>
                     <Route path="/mine" component={Mine}/>
-                    <Route path="/detail" component={Detail}/>
+                    <Route path="/detail/:id" component={Detail}/>
                     <Redirect from="/" to="/home"/>
                     {/* <Route path="/" component={Home} exact/> */}
                 </Switch>

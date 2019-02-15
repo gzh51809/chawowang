@@ -13,11 +13,11 @@ class List extends Component{
             list:[],
             topath:"/detail"
         }
-        this.handleClick=this.handleClick.bind(this);
+        // this.handleClick=this.handleClick.bind(this);
     }
-    handleClick(){
+    handleClick(index){
         console.log(this.props.history)
-        this.props.history.push(this.state.topath);
+        this.props.history.push(this.state.topath+`/`+index);
     }
     // http://www.chawo.com/mobile/index.php?act=index
     componentWillMount(){
@@ -54,7 +54,7 @@ class List extends Component{
                                     item.goods.item.map((list,index)=>{
                                         return (
                                             
-                                                <li onClick={this.handleClick} key={index}>
+                                                <li onClick={this.handleClick.bind(this,list.goods_id)} key={index}>
                                                     {/* <a href="#"> */}
                                                         <div className="goods-pic"><img src={list.goods_image} alt=""/></div>
                                                         <dl className="goods-info">
